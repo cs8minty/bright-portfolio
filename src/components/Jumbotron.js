@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const Box = styled.div`
-  border: 1px solid black;
-`;
+const Jumbotron = props => {
+  const Box = styled.div`
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-image: url(${props.img});
+  `;
 
-const Jumbotron = () => {
-  return <Box>Hello World</Box>;
+  const JumboTitle = styled.h3``;
+
+  return (
+    <Box>
+      <JumboTitle>Hello World</JumboTitle>
+    </Box>
+  );
 };
 
 export default Jumbotron;
