@@ -1,3 +1,1 @@
-import { Jumbotron } from "./Jumbotron";
-
-export {default as Jumbotron}
+export { default as Jumbotron } from "./Jumbotron";
